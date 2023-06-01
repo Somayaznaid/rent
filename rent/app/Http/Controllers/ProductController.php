@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Category;
 use App\Models\Review;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -31,8 +32,9 @@ class ProductController extends Controller
         }
 
         $products = $query->get();
+        $categories = Category::all();
 
-        return view('vehicle', compact('products'));
+        return view('vehicle', compact('products','categories'));
     }
     public function show($id)
     {

@@ -20,12 +20,14 @@ class Lessor extends Model
         'city',
         'image',
     ];
-    
+
     public function products()
     {
         return $this->hasMany(Product::class);
     }
-    protected $timestamps = false;
+    // protected $timestamps = false;
+    public $timestamps = false;
+
 
     public function role()
     {

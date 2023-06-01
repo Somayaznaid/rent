@@ -59,6 +59,9 @@
                         <a class="nav-link" href="{{ route('client') }}">Client</a>
                      </li>
                      <li class="nav-item">
+                        <a class="nav-link" href="{{ route('lessor.index') }}">Lessor</a>
+                     </li>
+                     <li class="nav-item">
                         <a class="nav-link" href="sign">Sign up</a>
                      </li>
                   </ul>
