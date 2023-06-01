@@ -269,6 +269,10 @@ button {
     width: 100%;
     float: left;
 
+
+
+    background-color: #273f54;
+
     background-color: #007495;
 
     background-color:   #434960;
@@ -355,6 +359,10 @@ button {
     float: left;
     font-size: 18px;
 
+
+
+    background-color: #273f54;
+
     background-color: #007495;
 
     background-color:   #434960;
@@ -404,9 +412,15 @@ button {
     font-size: 30px;
     color: #fcf8f8;
 
+
     background-color: #007495;
 
     background-color:   #434960;
+
+
+    background-color: #273f54;
+    background-color: #007495;
+
 
 }
 
@@ -473,9 +487,16 @@ button {
     font-size: 18px;
     color: #fcf8f8;
 
+
     background-color: #007495;
 
     background-color:  #434960;
+
+
+    background-color: #273f54;
+
+    background-color: #007495;
+
 
     border-radius: 3px;
     padding: 10px;
@@ -564,6 +585,9 @@ span.current {
     float: left;
     font-size: 18px;
     color: #fefefd;
+
+    background-color: #273f54;
+
 
     background-color: #007495;
 
@@ -1175,3 +1199,22 @@ textarea#comment::placeholder {
 .margin_top90 {
     margin-top: 90px;
 }
+
+
+.progress-label-left {
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1em;
+}
+
+.progress-label-right {
+    float: right;
+    margin-left: 0.3em;
+    line-height: 1em;
+}
+
+.star-light {
+    color: #e9ecef;
+}
+
+

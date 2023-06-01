@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -14,14 +15,23 @@ class Product extends Model
         'product_price',
         'status',
         'product_type',
-        'category_id', // Adjusted field name to match the column in the database
+        'category_id',
         'image1',
         'image2',
         'image3',
+        'lessor_id', // Updated the foreign key column name to match the relationship
     ];
+
+    protected $primaryKey = 'id';
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 
     public function lessor()
     {
         return $this->belongsTo(Lessor::class);
     }
 }
+

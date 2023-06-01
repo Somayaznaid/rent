@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
+use App\Http\Controllers\ProductController;
+
 use App\Http\Controllers\LessorController;
 use App\Http\Controllers\PropertyController;
 
@@ -43,6 +47,9 @@ Route::get('/services', function () {
 })->name('services');
 
 // Vehicles Page
+// Route::get('/vehicle', function () {
+//     return view('vehicle');
+// })->name('vehicle');
 Route::get('/gallery', function () {
     return view('gallery');
 })->name('gallery');
@@ -75,6 +82,7 @@ Route::post('/property', [PropertyController::class, 'store'])->name('property.s
 
 
 
+
 Route::get('sign', function () {
     return view('sign_user');
 });
@@ -87,3 +95,12 @@ Route::get('sign_lesson', function () {
 });
 
 Route::post('sign_lesson', [RegiestrationController::class , 'sign_lesson']);
+
+Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');
+
+Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('singleproduct');
+
+
+Route::post('/submit-rating', 'ProductController@submitRating');
+Route::post('/get-ratings', 'ProductController@getRatings');
+
