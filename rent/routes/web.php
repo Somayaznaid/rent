@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\LessorController;
 
+use App\Http\Controllers\Auth\RegiestrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,10 @@ use App\Http\Controllers\LessorController;
 
 
 // Home Page
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 })->name('home');
+
 
 // About Page
 Route::get('/about', function () {
@@ -52,6 +55,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+
 // lessor Page
 // Route::get('/lessor', function () {
 //     return view('lessor.index');
@@ -64,3 +68,15 @@ Route::get('/lessor', [LessorController::class, 'index'])->name('lessor.index');
 Route::put('/lessors/{lessor}', [LessorController::class, 'update'])->name('lessor.update');
 
 
+Route::get('sign', function () {
+    return view('sign_user');
+});
+
+Route::post('sign', [RegiestrationController::class , 'sign_action']);
+
+
+Route::get('sign_lesson', function () {
+    return view('sign_lesson');
+});
+
+Route::post('sign_lesson', [RegiestrationController::class , 'sign_lesson']);
