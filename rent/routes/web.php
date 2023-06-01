@@ -1,11 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+
+
 use App\Http\Controllers\ProductController;
+
 use App\Http\Controllers\LessorController;
 use App\Http\Controllers\PropertyController;
 
 
+use App\Http\Controllers\Auth\RegiestrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +31,10 @@ use App\Http\Controllers\PropertyController;
 
 
 // Home Page
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 })->name('home');
+
 
 // About Page
 Route::get('/about', function () {
@@ -58,6 +64,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+
 // lessor Page
 // Route::get('/lessor', function () {
 //     return view('lessor.index');
@@ -75,6 +82,20 @@ Route::post('/property', [PropertyController::class, 'store'])->name('property.s
 
 
 
+
+Route::get('sign', function () {
+    return view('sign_user');
+});
+
+Route::post('sign', [RegiestrationController::class , 'sign_action']);
+
+
+Route::get('sign_lesson', function () {
+    return view('sign_lesson');
+});
+
+Route::post('sign_lesson', [RegiestrationController::class , 'sign_lesson']);
+
 Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');
 
 Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('singleproduct');
@@ -82,3 +103,4 @@ Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('sin
 
 Route::post('/submit-rating', 'ProductController@submitRating');
 Route::post('/get-ratings', 'ProductController@getRatings');
+

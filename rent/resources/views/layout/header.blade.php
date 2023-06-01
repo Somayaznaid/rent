@@ -48,18 +48,21 @@
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('services') }}">Services</a>
                      </li>
+<<<<<<< HEAD
+                     {{-- <li class="nav-item">
+                        <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
+                     </li> --}}
+=======
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('vehicle') }}">Vehicles</a>
                         {{-- <a class="nav-link" href="{{ route('gallery') }}">Gallery</a> --}}
                      </li>
+>>>>>>> e8e1a72514ed4978078510d373fc844ba5bc3c10
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('client') }}">Client</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('lessor.index') }}">Lessor</a>
+                        <a class="nav-link" href="sign">Sign up</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">

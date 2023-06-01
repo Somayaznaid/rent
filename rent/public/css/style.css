@@ -214,8 +214,13 @@ button {
 
 .header_section {
     width: 100%;
-    float: left;
+
+    
     background-color: #273f54;
+
+    
+    background-color: #253d68;
+
     height: auto;
     background-size: 100%;
 }
@@ -247,7 +252,11 @@ button {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
+
     color: #007495;
+
+    color:   #434960;
+
 }
 
 
@@ -259,8 +268,15 @@ button {
 .call_text_main{
     width: 100%;
     float: left;
+
+
+
     background-color: #273f54;
+
     background-color: #007495;
+
+    background-color:   #434960;
+
     height: auto;
     padding: 10px 0px;
 }
@@ -342,8 +358,15 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
+
+
+
     background-color: #273f54;
+
     background-color: #007495;
+
+    background-color:   #434960;
+
     color: #fcf8f8;
     text-align: center;
     padding: 10px;
@@ -388,8 +411,16 @@ button {
     opacity: 1;
     font-size: 30px;
     color: #fcf8f8;
+
+
+    background-color: #007495;
+
+    background-color:   #434960;
+
+
     background-color: #273f54;
     background-color: #007495;
+
 
 }
 
@@ -456,9 +487,16 @@ button {
     font-size: 18px;
     color: #fcf8f8;
 
+
+    background-color: #007495;
+
+    background-color:  #434960;
+
+
     background-color: #273f54;
 
     background-color: #007495;
+
 
     border-radius: 3px;
     padding: 10px;
@@ -550,7 +588,11 @@ span.current {
 
     background-color: #273f54;
 
+
     background-color: #007495;
+
+    background-color:   #434960;
+
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
@@ -626,7 +668,11 @@ span.current {
     width: 100%;
     float: left;
     font-size: 18px;
+
     color: #007495;
+
+    color:   #434960;
+
     text-align: center;
     margin: 0px;
     font-weight: bold;
@@ -646,7 +692,11 @@ span.current {
     font-size: 16px;
     color: #fefefd;
     text-align: center;
+
     background-color: #007495;
+
+    background-color:   #434960;
+
     font-weight: bold;
     padding: 10px;
 }
@@ -682,7 +732,7 @@ span.current {
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-prev:hover {
     color: #fefefd;
-    background-color: #f01c1c;
+    background-color:   #434960;
 }
 
 
@@ -822,7 +872,11 @@ span.current {
     opacity: 1;
     font-size: 30px;
     color: #fefefd;
+
     background-color: #007495;
+
+    background-color:   #434960;
+
 }
 
 #custom_slider .carousel-control-next:focus,
@@ -854,13 +908,17 @@ span.current {
 }
 
 .contact_section_2 {
-    width: 100%;
+    width: 95%;
+    height: 600px;
     margin: 0 auto;
     padding: 110px 20px 50px 20px;
+
     background-color: #007495;
+    background-color: #434960;
+
     border-top-left-radius: 540px;
     border-top-right-radius: 540px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .padding_left_0 {
@@ -913,14 +971,20 @@ textarea#comment.massage-bt::placeholder {
     width: 170px;
     margin: 0 auto;
     text-align: center;
+    border: none;
+
 }
 
-.send_bt a {
+.send_bt button {
     width: 100%;
     text-align: center;
     font-size: 16px;
     color: #fefefd;
+
     background-color: #09a8d4;
+
+    background-color: #555c92;
+
     padding: 12px;
     margin-top: 20px;
     display: block;
@@ -1021,7 +1085,11 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .social_icon li a:hover {
+
     background-color: #007495;
+
+    background-color: #555c92;
+
     color: #ffffff;
 }
 
@@ -1057,7 +1125,10 @@ textarea#comment::placeholder {
     font-size: 16px;
     padding: 8px 0px;
     text-transform: uppercase;
+
     background-color: #007495;
+
+    background-color: #555c92;
     text-align: center;
     border-radius: 3px;
 }
@@ -1081,6 +1152,7 @@ textarea#comment::placeholder {
 
 .location_text a:hover {
     color: #007495;
+    color: #555c92;
 }
 
 .padding_left_15 {
@@ -1117,6 +1189,8 @@ textarea#comment::placeholder {
 
 .copyright_text a:hover {
     color: #007495;
+
+    color: #555c92;
 }
 
 
