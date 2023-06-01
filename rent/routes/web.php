@@ -23,9 +23,9 @@ use App\Http\Controllers\Auth\RegiestrationController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 
@@ -90,11 +90,11 @@ Route::get('sign', function () {
 Route::post('sign', [RegiestrationController::class , 'sign_action']);
 
 
-Route::get('sign_lesson', function () {
-    return view('sign_lesson');
+Route::get('sign_lessor', function () {
+    return view('sign_lessor');
 });
 
-Route::post('sign_lesson', [RegiestrationController::class , 'sign_lesson']);
+Route::post('/sign-lessor', [RegiestrationController::class, 'sign_lessor'])->name('sign_lessor');
 
 Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');
 
@@ -104,3 +104,8 @@ Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('sin
 Route::post('/submit-rating', 'ProductController@submitRating');
 Route::post('/get-ratings', 'ProductController@getRatings');
 
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::post('/login', [RegiestrationController::class, 'login'])->name('login');
