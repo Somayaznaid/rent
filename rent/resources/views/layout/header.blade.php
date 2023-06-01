@@ -48,9 +48,9 @@
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('services') }}">Services</a>
                      </li>
-                     {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
-                     </li> --}}
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('vehicle') }}">Vehicles</a>
+                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('client') }}">Client</a>
                      </li>

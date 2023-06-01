@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,9 +36,9 @@ Route::get('/services', function () {
 })->name('services');
 
 // Vehicles Page
-Route::get('/vehicles', function () {
-    return view('vehicles');
-})->name('vehicles');
+// Route::get('/vehicle', function () {
+//     return view('vehicle');
+// })->name('vehicle');
 
 // Client Page
 Route::get('/client', function () {
@@ -51,3 +51,6 @@ Route::get('/contact', function () {
 })->name('contact');
 
 
+Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');
+
+Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('singleproduct');
