@@ -50,12 +50,16 @@
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('vehicle') }}">Vehicles</a>
+                        <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('client') }}">Client</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('lessor.index') }}">Lessor</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">

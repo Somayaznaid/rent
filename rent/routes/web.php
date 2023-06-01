@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\LessorController;
+use App\Http\Controllers\PropertyController;
 
 
 
@@ -42,6 +44,9 @@ Route::get('/services', function () {
 // Route::get('/vehicle', function () {
 //     return view('vehicle');
 // })->name('vehicle');
+Route::get('/gallery', function () {
+    return view('gallery');
+})->name('gallery');
 
 // Client Page
 Route::get('/client', function () {
@@ -52,6 +57,22 @@ Route::get('/client', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+// lessor Page
+// Route::get('/lessor', function () {
+//     return view('lessor.index');
+// })->name('lessor.index');
+
+
+// Route::get('/lessor', 'LessorController@index')->name('lessor.index');
+Route::get('/lessor', [LessorController::class, 'index'])->name('lessor.index');
+
+Route::put('/lessors/{lessor}', [LessorController::class, 'update'])->name('lessor.update');
+
+Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
+Route::post('/property', [PropertyController::class, 'store'])->name('property.store');
+
+
 
 
 Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');

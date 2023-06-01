@@ -10,6 +10,7 @@
                         <div class="carousel-item active">
                            <div class="banner_taital_main">
                               <h1 class="banner_taital">Car Rent <br><span style="color: #273f54;">For You</span></h1>
+                              <h1 class="banner_taital">Car<br><span style="color: #007495;">For You</span></h1>
                               <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
                               <div class="btn_main">
                                  <div class="contact_bt"><a href="#">Read More</a></div>
@@ -20,6 +21,7 @@
                         <div class="carousel-item">
                            <div class="banner_taital_main">
                               <h1 class="banner_taital">Car Rent <br><span style="color: #273f54;">For You</span></h1>
+                              <h1 class="banner_taital">Car Rent <br><span style="color: #007495;">For You</span></h1>
                               <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
                               <div class="btn_main">
                                  <div class="contact_bt"><a href="#">Read More</a></div>
@@ -30,6 +32,7 @@
                         <div class="carousel-item">
                            <div class="banner_taital_main">
                               <h1 class="banner_taital">Car Rent <br><span style="color: #273f54;">For You</span></h1>
+                              <h1 class="banner_taital">Car Rent <br><span style="color: #007495;">For You</span></h1>
                               <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority</p>
                               <div class="btn_main">
                                  <div class="contact_bt"><a href="#">Read More</a></div>
@@ -64,6 +67,7 @@
                   <div class="col-md-6">
                      <div class="about_taital_box">
                         <h1 class="about_taital">About <span style="color: #273f54;">Us</span></h1>
+                        <h1 class="about_taital">About <span style="color: #007495;">Us</span></h1>
                         <p class="about_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined </p>
                         <div class="readmore_btn"><a href="#">Read More</a></div>
                      </div>

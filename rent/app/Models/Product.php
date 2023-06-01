@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'product_name',
         'product_description',
@@ -17,9 +19,11 @@ class Product extends Model
         'image1',
         'image2',
         'image3',
-        'lessors_id',
+        'lessor_id', // Updated the foreign key column name to match the relationship
     ];
+
     protected $primaryKey = 'id';
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -30,3 +34,4 @@ class Product extends Model
         return $this->belongsTo(Lessor::class);
     }
 }
+
