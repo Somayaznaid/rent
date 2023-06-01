@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LessorController;
+use App\Http\Controllers\PropertyController;
+
 
 
 /*
@@ -62,5 +64,10 @@ Route::get('/contact', function () {
 Route::get('/lessor', [LessorController::class, 'index'])->name('lessor.index');
 
 Route::put('/lessors/{lessor}', [LessorController::class, 'update'])->name('lessor.update');
+
+Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
+Route::post('/property', [PropertyController::class, 'store'])->name('property.store');
+
+
 
 
