@@ -41,6 +41,7 @@
                            </div>
                         </div>
                      </div>
+                     {{-- hello --}}
                      <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
                         <i class="fa fa-angle-left"></i>
                      </a>
