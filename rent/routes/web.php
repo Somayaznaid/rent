@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,3 +57,7 @@ Route::get('/contact', function () {
 Route::get('/vehicle', [ProductController::class, 'index'])->name('vehicle');
 
 Route::get('/singleproduct/{id}', [ProductController::class, 'show'])->name('singleproduct');
+
+
+Route::post('/submit-rating', 'ProductController@submitRating');
+Route::post('/get-ratings', 'ProductController@getRatings');
