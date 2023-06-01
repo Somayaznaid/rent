@@ -153,13 +153,19 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="category">Category</label>
+                    <select class="form-control" id="category" name="category" required>
+                        @foreach($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label for="product_type">Product Type</label>
                     <input type="text" class="form-control" id="product_type" name="product_type" required>
                 </div>
-                <div class="form-group">
-                    <label for="category">Category</label>
-                    <input type="text" class="form-control" id="category" name="category" required>
-                </div>
+                
                 <div class="form-group">
                     <label for="image1">Image 1</label>
                     <input type="text" class="form-control" id="image1" name="image1">

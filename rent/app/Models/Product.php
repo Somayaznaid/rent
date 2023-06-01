@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,16 +14,14 @@ class Product extends Model
         'product_price',
         'status',
         'product_type',
-        'category',
+        'category_id', // Adjusted field name to match the column in the database
         'image1',
         'image2',
         'image3',
     ];
 
     public function lessor()
-{
-    return $this->belongsTo(Lessor::class);
-}
-
-
+    {
+        return $this->belongsTo(Lessor::class);
+    }
 }
