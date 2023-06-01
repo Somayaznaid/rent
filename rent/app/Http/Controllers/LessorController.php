@@ -16,4 +16,15 @@ public function index(Lessor $lessor)
     return view('lessor.index', compact('lessor','properties'));
 }
 
+public function update(Request $request, Lessor $lessor)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+        ]);
+
+        $lessor->update($validatedData);
+
+        return redirect()->back()->with('success', 'Profile updated successfully.');
+    }
 }

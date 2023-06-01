@@ -10,6 +10,13 @@ class Lessor extends Model
     use HasFactory;
     protected $table = 'lessors';
 
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'image',
+    ];
+    
     public function products()
     {
         return $this->hasMany(Product::class);

@@ -61,3 +61,6 @@ Route::get('/contact', function () {
 // Route::get('/lessor', 'LessorController@index')->name('lessor.index');
 Route::get('/lessor', [LessorController::class, 'index'])->name('lessor.index');
 
+Route::put('/lessors/{lessor}', [LessorController::class, 'update'])->name('lessor.update');
+
+
