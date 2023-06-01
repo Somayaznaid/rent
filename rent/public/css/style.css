@@ -210,12 +210,12 @@ button {
 }
 
 
-/* header section start */
+/* header section start send_bt a*/
 
 .header_section {
     width: 100%;
     float: left;
-    background-color: #0e0c06;
+    background-color: #273f54;
     height: auto;
     background-size: 100%;
 }
@@ -223,7 +223,7 @@ button {
 .header_bg {
     width: 100%;
     float: left;
-    background: #1d1d1d
+    background: #1d1d1d;
     height: auto;
     background-size: 100%;
 }
@@ -247,7 +247,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fe5b29;
+    color: #007495;
 }
 
 
@@ -259,7 +259,7 @@ button {
 .call_text_main{
     width: 100%;
     float: left;
-    background-color: #fe5b29;
+    background-color: #007495;
     height: auto;
     padding: 10px 0px;
 }
@@ -284,7 +284,7 @@ button {
 }
 
 .call_text a:hover {
-    color: #363636;
+    color: #434960;
 }
 
 .padding_left_15 {
@@ -341,7 +341,7 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
-    background-color: #fe5b29;
+    background-color: #007495;
     color: #fcf8f8;
     text-align: center;
     padding: 10px;
@@ -349,12 +349,12 @@ button {
 
 .contact_bt a:hover {
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 .contact_bt.active a {
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #434960;
     margin-left: 10px;
 }
 
@@ -376,7 +376,7 @@ button {
     top: 100px;
     left: -120px;
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 #banner_slider .carousel-control-next,
@@ -386,7 +386,7 @@ button {
     opacity: 1;
     font-size: 30px;
     color: #fcf8f8;
-    background-color: #fe5b29;
+    background-color: #007495;
 }
 
 #banner_slider .carousel-control-next:focus,
@@ -394,7 +394,7 @@ button {
 #banner_slider .carousel-control-prev:focus,
 #banner_slider .carousel-control-prev:hover {
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 /* banner section end */
@@ -451,7 +451,7 @@ button {
     float: left;
     font-size: 18px;
     color: #fcf8f8;
-    background-color: #fe5b29;
+    background-color: #007495;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -459,7 +459,7 @@ button {
 
 .readmore_btn a:hover {
     color: #fcf8f8;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 
@@ -471,7 +471,7 @@ button {
 .search_section {
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: #434960;
     height: auto;
     padding: 40px 0px;
     background-size: cover;
@@ -525,7 +525,7 @@ span.current {
 }
 
 .nice-select {
-    color: #363636;
+    color: #434960;
     font-size: 18px;
 }
 
@@ -539,7 +539,7 @@ span.current {
     float: left;
     font-size: 18px;
     color: #fefefd;
-    background-color: #fe5b29;
+    background-color: #007495;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
@@ -548,7 +548,7 @@ span.current {
 }
 
 .search_btn a:hover {
-    color: #363636;
+    color: #434960;
     background-color: #ffffff;
 }
 
@@ -615,7 +615,7 @@ span.current {
     width: 100%;
     float: left;
     font-size: 18px;
-    color: #fe5b29;
+    color: #007495;
     text-align: center;
     margin: 0px;
     font-weight: bold;
@@ -635,14 +635,14 @@ span.current {
     font-size: 16px;
     color: #fefefd;
     text-align: center;
-    background-color: #fe5b29;
+    background-color: #007495;
     font-weight: bold;
     padding: 10px;
 }
 
 .read_bt a:hover {
     color: #fefefd;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 #main_slider a.carousel-control-prev {
@@ -682,7 +682,7 @@ span.current {
 .choose_section{
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: #434960;
     height: auto;
     padding: 40px 0px;
 }
@@ -774,7 +774,7 @@ span.current {
     color: #1d1f1e;
     font-weight: bold;
     text-align: center;
-    padding: 0px 0px 20px 0px; 
+    padding: 0px 0px 20px 0px;
 }
 
 .client_text {
@@ -811,7 +811,7 @@ span.current {
     opacity: 1;
     font-size: 30px;
     color: #fefefd;
-    background-color: #fa5a29;
+    background-color: #007495;
 }
 
 #custom_slider .carousel-control-next:focus,
@@ -819,7 +819,7 @@ span.current {
 #custom_slider .carousel-control-prev:focus,
 #custom_slider .carousel-control-prev:hover {
     color: #fefefd;
-    background-color: #363636;
+    background-color: #434960;
 }
 
 
@@ -836,7 +836,7 @@ span.current {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #363636;
+    color: #434960;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -846,7 +846,7 @@ span.current {
     width: 100%;
     margin: 0 auto;
     padding: 110px 20px 50px 20px;
-    background-color: #fe5b29;
+    background-color: #007495;
     border-top-left-radius: 540px;
     border-top-right-radius: 540px;
     margin-top: 50px;
@@ -909,7 +909,7 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
     font-size: 16px;
     color: #fefefd;
-    background-color: #fe2929;
+    background-color: #09a8d4;
     padding: 12px;
     margin-top: 20px;
     display: block;
@@ -919,7 +919,7 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .send_bt a:hover {
-    color: #363636;
+    color: #434960;
     background-color: #ffffff;
 }
 
@@ -939,7 +939,7 @@ textarea#comment.massage-bt::placeholder {
     width: 100%;
     float: left;
     height: auto;
-    background-color: #363636;
+    background-color: #434960;
     background-size: 100%;
     padding: 50px 0px;
 }
@@ -1010,7 +1010,7 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .social_icon li a:hover {
-    background-color: #fe5b29;
+    background-color: #007495;
     color: #ffffff;
 }
 
@@ -1046,13 +1046,13 @@ textarea#comment::placeholder {
     font-size: 16px;
     padding: 8px 0px;
     text-transform: uppercase;
-    background-color: #fe5b29;
+    background-color: #007495;
     text-align: center;
     border-radius: 3px;
 }
 
 .subscribe_bt a:hover {
-    color: #363636;
+    color: #434960;
     background-color: #ffffff;
 }
 
@@ -1069,7 +1069,7 @@ textarea#comment::placeholder {
 }
 
 .location_text a:hover {
-    color: #fe5b29;
+    color: #007495;
 }
 
 .padding_left_15 {
@@ -1086,7 +1086,7 @@ textarea#comment::placeholder {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #363636;
+    background-color: #434960;
     height: auto;
 }
 
@@ -1105,7 +1105,7 @@ textarea#comment::placeholder {
 }
 
 .copyright_text a:hover {
-    color: #fe5b29;
+    color: #007495;
 }
 
 
