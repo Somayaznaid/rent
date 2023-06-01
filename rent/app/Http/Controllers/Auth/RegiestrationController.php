@@ -19,7 +19,7 @@ class RegiestrationController extends Controller
             'email' => 'required|unique:users|email',
             'password' => 'required|min:8',
             'confirm_password' => 'required|same:password',
-            
+
         ]);
 
         $user = new User;
@@ -27,14 +27,24 @@ class RegiestrationController extends Controller
         $user->name = $req->input('name');
         $user->email = $req->input('email');
         $user->password = Hash::make($req->password);
+
         
+
+      
+
+
         $user->role_id = 1; // Assign user rule ID
         $user->save();
         return redirect('index');
     }
 
-    public function sign_lessor(Request $req){
        
+
+    public function sign_lesson(Request $req){
+
+        $def = 'public/images/user.png';
+
+
         $validated = $req->validate([
             'name' => 'required',
             'email' => 'required|unique:lessors|email',
@@ -43,10 +53,16 @@ class RegiestrationController extends Controller
             'city' => 'required',
             'password' => 'required|min:8',
             'confirm_password' => 'required|same:password',
+
         ]);
          
          
         
+
+
+       
+
+
         $lessor = new Lessor();
 
         $lessor->name = $req->input('name');
@@ -57,6 +73,11 @@ class RegiestrationController extends Controller
         $lessor->password = Hash::make($req->password);
 
         
+
+
+        $lessor->img = $def;
+
+
         $lessor->role_id = 3; // Assign user rule ID
         
         $lessor->save();

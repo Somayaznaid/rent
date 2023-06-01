@@ -49,6 +49,7 @@
                         <a class="nav-link" href="{{ route('services') }}">Services</a>
                      </li>
 
+
                      {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
                      </li> --}}
@@ -57,8 +58,20 @@
                         <a class="nav-link" href="{{ route('vehicle') }}">Vehicles</a>
                      </li>
 
+
+                     {{-- <li class="nav-item">
+                        <a class="nav-link" href="{{ route('vehicles') }}">Vehicles</a>
+                     </li> --}}
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('vehicle') }}">Vehicles</a>
+                        {{-- <a class="nav-link" href="{{ route('gallery') }}">Gallery</a> --}}
+                     </li>
+
                      <li class="nav-item">
                         <a class="nav-link" href="{{ route('client') }}">Client</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('lessor.index') }}">Lessor</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="sign">Sign up</a>

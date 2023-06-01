@@ -13,7 +13,7 @@ class Lessor extends Model implements Authenticatable
     use AuthenticatableTrait;
     protected $table = 'lessors';
 
-    public $timestamps = false;
+    public $timestamps = 'false';
     protected $fillable = [
         'name',
         'email',
@@ -23,13 +23,22 @@ class Lessor extends Model implements Authenticatable
         'city',
         'image',
     ];
+
     
     
+
+
+
     public function products()
     {
         return $this->hasMany(Product::class);
     }
+
    
+
+    // protected $timestamps = false;
+  
+
 
     public function role()
     {

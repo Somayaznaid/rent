@@ -17,8 +17,9 @@
                                                 name="category">
                                                 <option value="" disabled selected>Categories</option>
                                                 <option value="">all</option>
-                                                <option value="Boat">Boat</option>
-                                                <option value="Car">Car</option>
+                            @foreach($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                            @endforeach
                                             </select>
                                     </div>
                                     <div class="col-md-3 select-outline">
@@ -26,8 +27,8 @@
                                             name="type">
                                             <option value="" disabled selected>status</option>
                                             <option value="">all</option>
-                                            <option value="1">opane</option>
-                                            <option value="0">close</option>
+                                            <option value="1">Available</option>
+                                            <option value="0">Unavailable</option>
                                         </select>
                                     </div>
                                     <div class="row">
@@ -44,7 +45,7 @@
                                            <button type="submit" class="btn btn-primary px-4">Filter</button>
                                        </div>
                                    </div>
-                                    
+
                                     </form>
                                 </div>
                             </div>
@@ -76,7 +77,7 @@
                                 <div class="read_bt">
                                  <a href="{{ route('singleproduct', $product->id) }}">Read more</a>
                              </div>
-                             
+
                             </div>
                         </div>
                     @endforeach
